@@ -1,0 +1,164 @@
+* {
+    font-family: Poppins;
+}
+
+body {
+    margin: 0;
+    font-size: 17px;
+    color: #FFF;
+    overflow-y: scroll;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url(party-background.png) center/cover no-repeat;
+}
+
+button, input, textarea, select {
+    font-family: inherit;
+}
+
+header {
+    text-align: center;
+    font-size: 28px;
+}
+
+
+input, button, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    line-height: inherit;
+    font-size: inherit;
+}
+
+button {
+    border: none;
+}
+
+.survey-parent {
+    width: 50%;
+    margin: auto;
+    border-radius: 10px;
+    background: linear-gradient(315deg, rgba(45, 52, 54, 0.8) 0%, rgba(0, 0, 0, 0.8) 74%);
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+#name-label {
+    display: block;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 8px;
+    margin-top: 50px;
+}
+
+#name {
+    display: block;
+    width: 90%;
+    margin: auto;
+    padding: 10px 5px;
+    border-radius: 5px;
+
+}
+
+#email-label {
+    display: block;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 8px;
+    margin-top: 25px;
+}
+
+#email {
+    display: block;
+    width: 90%;
+    margin: auto;
+    padding: 10px 5px;
+    border-radius: 5px;
+}
+
+#number-label {
+    display: block;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 8px;
+    margin-top: 25px;
+}
+    
+#number {
+    display: block;
+    width: 90%;
+    margin: auto;
+    padding: 10px 5px;
+    border-radius: 5px;
+}
+
+.paragraph {
+    display: block;
+    width: 90%;
+    margin: auto;
+    margin-top: 12px;
+}
+
+input[type=radio] {
+    display: inline-flex;
+    margin-top: 10px;
+}
+
+#yes-no {
+    width: 90%;
+    margin: auto;
+}
+
+#anything-with-you {
+    display: block;
+    width: 90%;
+    margin: auto;
+    padding: 10px 5px;
+    margin-top: 10px;
+}
+
+.checkbox-div {
+    width: 90%;
+    margin: auto;
+}
+
+.checkbox-form p {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+#suggestions {
+    display: blocK;
+    width: 90%;
+    margin: auto;
+    padding: 10px 5px;
+    margin-top: 10px;
+    resize: none;
+}
+
+#submit {
+    display: blocK;
+    width: 50%;
+    margin: auto;
+    padding: 10px 5px;
+    margin-top: 15px;
+    background: #0275d8;
+    color: white;
+    border-radius: 5px;
+}
+
+@media screen and (max-width:650px) {
+    header {
+        font-size: 15px;
+    }
+    .survey-parent {
+        padding: 15px;
+        width: 75%;
+    }
+    #name, #email, #number, #suggestions, #submit {
+        padding: 5px 2.5px;
+    }
+    body {
+        font-size: 14px;
+    }
+    #name-label {
+        margin-top: 12px;
+    }
+}

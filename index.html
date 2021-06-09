@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>New Year's | Invitation Form</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">New Year's Party Invitation</h1>
+        <p id=description">Come to our party and ring in the New Year!</p>
+    </header>
+<div class="survey-parent">     
+    <form id="survey-form">
+        <div class="form">
+            <label id="name-label" for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form">
+            <label id="email-label" for="email">Email</label>
+            <input type="text" name="email" id="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form">
+            <label id="number-label" for="number">Age</label>
+            <input type="number name="age" id="number" min="16" max="75" placeholder="Age" required>
+        </div>
+        <div class="form">
+            <p class="paragraph">Can you make it?</p>
+            <div id="yes-no">
+                <input id="yeah" type="radio" name="user-make" value="yeah">
+                <label class="custom-control-label" for="yeah">Yes!</label>
+                <input id="no" type="radio" name="user-make" value="no">
+                <label class="custom-control-label" for="no">No!</label>
+            </div>  
+        </div>
+        <div class="form">
+            <p class="paragraph">Everyone will have to bring one of these items. Please select the item you will be bringing.</p>
+            <select id="anything-with-you" name="anything" required>
+                <option disabled selected value>Select an option</option>
+                <option value="snacks">Snacks</option>
+                <option value="drinks">A Drink</option>
+                <option value="desserts">Dessert</option>
+            </select>
+        </div>
+        <div class="form checkbox-form">
+            <p class="paragraph">Everyone who wants to join will have to wear a party mask. What type of mask will you be wearing?</p>
+            <div class="checkbox-div">
+                <input id="cute" type="checkbox" name="mask" value="cute">
+                <label class="custom-control-label" for="cute">Intimidating Mask</label>
+            </div>
+            <div class="checkbox-div">
+                <input id="funny" type="checkbox" name="mask" value="funny">
+                <label class="custom-control-label" for="funny">Comedic Mask</label>
+            </div>
+            <div class="checkbox-div">
+                <input id="scary" type="checkbox" name="mask" value="scary">
+                <label class="custom-control-label" for="scary">Devilish Mask</label>
+            </div>
+            <div class="checkbox-div">
+                <input id="classy" type="checkbox" name="mask" value="classy">
+                <label class="custom-control-label" for="classy">Classy Mask</label>
+            </div>
+            <div class="checkbox-div">
+                <input id="luxurious" type="checkbox" name="mask" value="luxurious">
+                <label class="custom-control-panel" for="luxurious">Luxurious Mask</label>
+            </div>
+            <div class="checkbox-div">
+                <input id="heroic" type="checkbox" name="mask" value="heroic">
+                <label class="custom-control-panel" for="heroic">Heroic Mask</label>
+            </div>
+        </div>
+        <div class="form">
+            <p class="paragraph">Any comments or suggestions?</p>
+            <textarea id="suggestions" name="suggestions" placeholder="Enter your suggestions here..."></textarea>
+        </div>
+        <div class="form">
+            <button type="submit" id="submit">Submit</button>
+        </div>
+    </form>
+</div>      
+</body>
+</html>
